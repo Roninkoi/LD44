@@ -8,7 +8,7 @@ Your boss has set you an ever increasing quota of souls to
 claim and your family’s expenses threaten to ruin your finances.
 Can you keep your salary up and pay the bills?
 
-Claims souls that are RED. Claiming innocent souls cause a
+Claims souls that are RED. Claiming innocent souls causes a
 monetary penalty (-3). You have to meet your soul quota in
 your shift, which can range from 12 hours to 24 hours. At the
 end of each day you will receive money based on the number of
@@ -28,3 +28,6 @@ SPACE --------- attack (claim soul)
 The game was programmed in Go using Vulkan (vulkan-go).
 GLFW is used for windowing. It uses my own engine, Gorium.
 
+https://ldjam.com/events/ludum-dare/44/worked-to-death
+https://github.com/Roninkoi/LD44
+https://roninkoi.itch.io/worked-to-death
