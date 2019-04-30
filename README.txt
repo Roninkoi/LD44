@@ -8,6 +8,8 @@ Your boss has set you an ever increasing quota of souls to
 claim and your family’s expenses threaten to ruin your finances.
 Can you keep your salary up and pay the bills?
 
+Featured: crazy physics and nightmarish landscapes.
+
 Claims souls that are RED. Claiming innocent souls causes a
 monetary penalty (-3). You have to meet your soul quota in
 your shift, which can range from 12 hours to 24 hours. At the

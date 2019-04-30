@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2f600973-b174-4824-aea6-f89ee9521d84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game/world.go" beforeDir="false" afterPath="$PROJECT_DIR$/game/world.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gfx/test.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/AUTHORS" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/AUTHORS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/CONTRIBUTORS" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/CONTRIBUTORS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/codegen.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/codegen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/conv.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/conv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/conv_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/conv_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/mat_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/mat_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matmn.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matmn.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matmn_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matmn_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matrix.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matrix.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matrix.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matrix.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matstack/matstack.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matstack/matstack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matstack/transformStack.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matstack/transformStack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matstack/transformstack_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/matstack/transformstack_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/mempool.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/mempool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/mempool_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/mempool_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/project.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/project.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/project_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/project_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/quat.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/quat.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/quat_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/quat_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/shapes.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/shapes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/transform.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/transform.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/transform_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/transform_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/util_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/util_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/vec_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/vec_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/vecn.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/vecn.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/vecn_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/vecn_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/vector.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/vector.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/vector.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl32/vector.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/conv.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/conv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/conv_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/conv_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/mat_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/mat_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/matmn.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/matmn.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/matmn_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/matmn_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/matrix.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/matrix.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/matstack/matstack.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/matstack/matstack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/matstack/transformStack.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/matstack/transformStack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/matstack/transformstack_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/matstack/transformstack_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/mempool.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/mempool.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/mempool_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/mempool_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/project.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/project.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/project_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/project_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/quat.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/quat.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/quat_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/quat_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/shapes.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/shapes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/transform.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/transform.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/transform_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/transform_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/util_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/util_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/vec_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/vec_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/vecn.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/vecn.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/vecn_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/vecn_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/vector.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/go-gl/mathgl/mgl64/vector.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/asche" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/asche" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/asche/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/asche/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/asche/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/asche/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/asche/application.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/asche/application.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/asche/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/asche/context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/asche/docs/asche-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/asche/docs/asche-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/asche/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/asche/errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/asche/helpers.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/asche/helpers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/asche/math.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/asche/math.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/asche/platform.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/asche/platform.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/asche/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/asche/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/bindata.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/bindata.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/data.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/data.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/helpers.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/helpers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/shaders/cube.frag" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/shaders/cube.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/shaders/cube.frag.spv" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/shaders/cube.frag.spv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/shaders/cube.vert" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/shaders/cube.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/shaders/cube.vert.spv" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/shaders/cube.vert.spv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/textures/gopher.png" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/textures/gopher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/android/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/android/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/android/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/android/jni/Android.mk" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/android/jni/Android.mk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/android/jni/Application.mk" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/android/jni/Application.mk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/android/jni/ValidationLayers.mk" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/android/jni/ValidationLayers.mk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_android/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_glfw/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_glfw/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_glfw/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_glfw/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_glfw/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_glfw/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_sdl2/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkancube/vulkancube_sdl2/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/bindata.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/bindata.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/helpers.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/helpers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/shaders/tri-frag.spv" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/shaders/tri-frag.spv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/shaders/tri-vert.spv" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/shaders/tri-vert.spv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/shaders/tri.frag" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/shaders/tri.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/shaders/tri.vert" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/shaders/tri.vert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/android/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/android/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/android/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/android/jni/Android.mk" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/android/jni/Android.mk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/android/jni/Application.mk" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/android/jni/Application.mk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/android/jni/ValidationLayers.mk" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/android/jni/ValidationLayers.mk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_android/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_glfw/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_glfw/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_glfw/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_glfw/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_glfw/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_glfw/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/main.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/main.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/main/Images.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/main/Images.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/main/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/main/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/main/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkandraw/vulkandraw_ios/main/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/android/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/android/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/android/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/android/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/android/jni/Android.mk" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/android/jni/Android.mk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/android/jni/Application.mk" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/android/jni/Application.mk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/android/jni/ValidationLayers.mk" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/android/jni/ValidationLayers.mk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_android/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_compute/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_compute/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_compute/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_compute/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_desktop/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_desktop/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_desktop/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_desktop/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_desktop/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_desktop/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/main.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/main.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/main/Images.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/main/Images.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/main/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/main/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/main/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/demos/vulkaninfo/vulkaninfo_ios/main/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/AUTHORS" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/AUTHORS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/GLFW_C_REVISION.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/GLFW_C_REVISION.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/build.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/build.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/c_glfw.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/c_glfw.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/c_glfw_darwin.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/c_glfw_darwin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/c_glfw_linbsd.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/c_glfw_linbsd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/c_glfw_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/c_glfw_windows.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/error.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/error.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/COPYING.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/COPYING.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/KHR/khrplatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/KHR/khrplatform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/getopt.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/getopt.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/getopt.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/getopt.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/glad.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/glad.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/glad/glad.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/glad/glad.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/linmath.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/linmath.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/mingw/_mingw_dxhelper.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/mingw/_mingw_dxhelper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/mingw/dinput.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/mingw/dinput.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/mingw/xinput.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/mingw/xinput.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/nuklear.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/nuklear.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/nuklear_glfw_gl2.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/nuklear_glfw_gl2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/tinycthread.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/tinycthread.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/tinycthread.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/tinycthread.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/vulkan/vk_platform.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/vulkan/vk_platform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/vulkan/vulkan.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/deps/vulkan/vulkan.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/include/GLFW/glfw3.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/include/GLFW/glfw3.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/include/GLFW/glfw3native.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/include/GLFW/glfw3native.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_init.m" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_init.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_joystick.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_joystick.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_joystick.m" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_joystick.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_monitor.m" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_monitor.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_platform.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_platform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_time.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_time.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_window.m" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/cocoa_window.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/context.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/context.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/egl_context.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/egl_context.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/egl_context.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/egl_context.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/glx_context.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/glx_context.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/glx_context.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/glx_context.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/init.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/input.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/input.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/internal.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/internal.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/linux_joystick.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/linux_joystick.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/linux_joystick.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/linux_joystick.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/mir_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/mir_init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/mir_monitor.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/mir_monitor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/mir_platform.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/mir_platform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/mir_window.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/mir_window.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/monitor.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/monitor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/nsgl_context.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/nsgl_context.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/nsgl_context.m" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/nsgl_context.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/posix_time.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/posix_time.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/posix_time.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/posix_time.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/posix_tls.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/posix_tls.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/posix_tls.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/posix_tls.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/vulkan.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/vulkan.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/wgl_context.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/wgl_context.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/wgl_context.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/wgl_context.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_joystick.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_joystick.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_joystick.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_joystick.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_monitor.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_monitor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_platform.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_platform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_time.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_time.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_tls.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_tls.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_window.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/win32_window.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/window.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/window.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/wl_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/wl_init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/wl_monitor.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/wl_monitor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/wl_platform.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/wl_platform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/wl_window.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/wl_window.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/x11_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/x11_init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/x11_monitor.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/x11_monitor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/x11_platform.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/x11_platform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/x11_window.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/x11_window.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/xkb_unicode.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/xkb_unicode.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/xkb_unicode.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/glfw/src/xkb_unicode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/input.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/input.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/input.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/input.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/monitor.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/monitor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/monitor.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/monitor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/native_darwin.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/native_darwin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/native_linbsd.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/native_linbsd.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/native_windows.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/native_windows.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/time.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/time.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/vulkan.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/vulkan.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/vulkan.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/vulkan.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/vulkan.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/vulkan.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/window.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/window.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/window.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/glfw/v3.3/glfw/window.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/android/native_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/android/native_window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/android/rect.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/android/rect.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/cgo_helpers.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/cgo_helpers.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/cgo_helpers.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/cgo_helpers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/cgo_helpers.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/cgo_helpers.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/const.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/const.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/moltenVK/vk_mvk_moltenvk.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/moltenVK/vk_mvk_moltenvk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_bridge.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_bridge.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_bridge.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_bridge.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_debug_android.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_debug_android.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_default_loader.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_default_loader.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_default_loader.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_default_loader.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_null32.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_null32.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_null64.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_null64.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_wrapper.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_wrapper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_wrapper_android.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_wrapper_android.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_wrapper_compute.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_wrapper_compute.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_wrapper_desktop.c" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_wrapper_desktop.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_wrapper_ios.m" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vk_wrapper_ios.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan.yml" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vk_platform.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vk_platform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_android.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_android.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_core.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_core.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_ios.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_ios.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_macos.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_macos.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_wayland.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_wayland.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_win32.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_win32.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_xcb.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_xcb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_xlib.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_xlib.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_xlib_xrandr.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan/vulkan_xlib_xrandr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan_android.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan_android.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan_darwin.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan_darwin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan_ios.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan_ios.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan_linux.go" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/vulkan_linux.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vulkan-go/vulkan/windows/windows.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vulkan-go/vulkan/windows/windows.h" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game/world.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="98" column="31" lean-forward="true" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="GOROOT" path="/usr/lib/golang" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/game/world.go" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/LD44.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="25" />
+    <option name="width" value="1900" />
+    <option name="height" value="1025" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="LD44" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LD44" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LD44" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LD44" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LD44" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LD44" type="462c0819:PsiDirectoryNode" />
+              <item name="grm" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="LD44" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="25" width="1920" height="1025" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2497332" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/game/world.go</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/game/game.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/world.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="98" column="31" lean-forward="true" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
