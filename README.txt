@@ -13,9 +13,9 @@ Featured: crazy physics and nightmarish landscapes.
 Claim souls that are RED. Claiming innocent souls causes a
 monetary penalty (-3). You have to meet your soul quota in
 your shift, which can range from 12 hours to 24 hours. At the
-end of each day you will receive money based on the number of
-souls claimed and your salary. If your money can't cover your
-bills or you don't meet your quota, the game ends.
+end of each day you will receive money based on your salary.
+If your money can't cover your bills or you don't meet your
+quota, the game ends.
 
 There is a day/night cycle that can make recognizing colors
 difficult. DAY = YELLOW, DAWN/DUSK = ORANGE, NIGHT = BLUE.

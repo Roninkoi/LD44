@@ -150,7 +150,7 @@ func (g *GUI) statScreen(r *grm.Renderer) {
 
 	g.renderText(r, "Your quota is: "+strconv.Itoa(g.quotaNum)+" souls", -0.6, 0.3-0.1, 0.05)
 
-	g.renderText(r, "Your salary is: "+strconv.Itoa(g.salaryNum)+" per soul", -0.65, 0.45-0.1, 0.05)
+	g.renderText(r, "Your salary is: "+strconv.Itoa(g.salaryNum), -0.50, 0.45-0.1, 0.05)
 
 	g.renderText(r, "The last bill was: "+strconv.Itoa(g.billNum), -0.55, 0.6-0.1, 0.05)
 

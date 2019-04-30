@@ -165,20 +165,28 @@ func (g *Game) input() {
 	} else if g.win {
 		if g.e.Input.SpacePress {
 			g.gameEnded = false
+			g.win = false
+			g.lose = false
 			g.world.start() // keep old stuff
 		}
 	} else if g.lose {
 		if g.e.Input.SpacePress {
 			g.gameEnded = false
+			g.win = false
+			g.lose = false
 			g.world.restart()
 		}
 	} else if g.intro {
 		if g.e.Input.SpacePress {
 			g.intro = false
+			g.win = false
+			g.lose = false
 		}
 	} else {
 		if g.e.Input.SpacePress {
 			g.gameEnded = false
+			g.win = false
+			g.lose = false
 			g.world.restart()
 		}
 	}

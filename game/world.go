@@ -100,6 +100,7 @@ func (w *World) load(r *grm.Renderer) {
 					w.cp[xi] = append(w.cp[xi], zi)
 				}
 			}
+
 			if xi > 0 {
 				grm.Stitch0(&nc, &w.chunks[w.cp[xi-1][zi]])
 			}
