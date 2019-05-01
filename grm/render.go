@@ -1341,7 +1341,7 @@ func (r *Renderer) getPhysical() {
 	if *r.physical == nil {
 		*r.physical = devices[0] // device selection failed
 	}
-	*r.physical = devices[0] // just pick 0 for now
+	//*r.physical = devices[0] // just pick 0 for now
 
 	println("selected device: ", *r.physical)
 }
