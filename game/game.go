@@ -36,7 +36,7 @@ func (g *Game) load() {
 	g.lose = false
 	g.intro = true
 
-	g.debug = true // DEBUG
+	g.debug = false // DEBUG
 
 	g.world.load(&g.e.Renderer)
 }

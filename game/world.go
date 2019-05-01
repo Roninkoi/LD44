@@ -438,7 +438,7 @@ func (w *World) tick() {
 				e2.SphereIsect = true
 				e2.Phys.Pos = w.entities[i].obj.Phys.Pos
 				e2.Phys.RPos = e2.Phys.Pos
-				e2.Phys.V = mgl32.Vec3{float32(math.Sin(float64(w.player.rot[1]))) * 0.05 * 2.0, -0.00, float32(math.Cos(float64(w.player.rot[1]))) * 0.05 * 2.0}
+				e2.Phys.V = mgl32.Vec3{float32(math.Sin(3.14 - float64(w.player.rot[1]))) * 0.2 * 2.0, -0.1, float32(math.Cos(3.14 - float64(w.player.rot[1]))) * 0.2 * 2.0}
 				//e2.Update()
 
 				w.souls = append(w.souls, e2)
