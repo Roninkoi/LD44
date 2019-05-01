@@ -36,7 +36,7 @@ func (g *Game) load() {
 	g.lose = false
 	g.intro = true
 
-	g.debug = false // DEBUG
+	g.debug = true // DEBUG
 
 	g.world.load(&g.e.Renderer)
 }
@@ -134,6 +134,7 @@ func (g *Game) input() {
 			moved = true
 		}
 
+		//println(g.player.obj.IDist)
 		if moved {
 			g.player.obj.Phys.V = g.player.obj.Phys.V.Add(movV)
 		}
@@ -147,8 +148,8 @@ func (g *Game) input() {
 		}
 		g.player.attacking = g.gui.scytheTicks < 4.0
 
-		g.player.obj.Phys.V[0] *= 0.9
-		g.player.obj.Phys.V[2] *= 0.9
+		g.player.obj.Phys.V[0] *= 0.95
+		g.player.obj.Phys.V[2] *= 0.95
 
 		if g.e.Input.Up && g.debug {
 			g.player.rot[0] += 0.05

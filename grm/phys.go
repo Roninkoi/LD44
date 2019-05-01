@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-var epsilon float32 = 0.006
+var epsilon float32 = 0.01
 
 type Phys struct {
 	RPos mgl32.Vec3
@@ -151,12 +151,14 @@ func (h *Hull) intersectsMesh(i *Mesh) bool {
 }
 
 // sphere intersection
-func (h *Hull) intersectsSphere(sc mgl32.Vec3, sr float32) bool {
+func (h *Hull) intersectsSphere(sc mgl32.Vec3, sr float32) (bool, float64) {
 	returns := false
 
 	cni := 0
 
 	h.cn = mgl32.Vec3{0.0, 0.0, 0.0}
+
+	cd := 10.0
 
 	for j := 0; j < (int)((float64)(len(h.mesh.faceCenter))/3.0) && !returns; j++ { // when 1, exit, might break
 		a := mgl32.Vec3{h.mesh.faceCenter[j*3+0], h.mesh.faceCenter[j*3+1], h.mesh.faceCenter[j*3+2]}
@@ -168,7 +170,11 @@ func (h *Hull) intersectsSphere(sc mgl32.Vec3, sr float32) bool {
 
 		c := a.Sub(b)
 
-		if c.Len() < h.mesh.triSize {
+		if float64(c.Len()) < cd {
+			cd = float64(c.Len())
+		}
+
+		if c.Len() < h.mesh.triSize*1.0 {
 			cdn := c.Dot(n)
 
 			if cdn < 0.0 {
@@ -188,7 +194,7 @@ func (h *Hull) intersectsSphere(sc mgl32.Vec3, sr float32) bool {
 		h.cn = h.cn.Mul(-1.0)
 	}
 
-	return returns
+	return returns, cd
 }
 
 type Sys struct {
@@ -199,7 +205,7 @@ type Sys struct {
 }
 
 func (p *Sys) Init() {
-	p.field = mgl32.Vec3{0.0, 0.005, 0.0}
+	p.field = mgl32.Vec3{0.0, 0.01, 0.0}
 }
 
 func (p *Sys) Clear() {
@@ -214,7 +220,7 @@ func (p *Sys) physIsect(i int, j int) {
 	isects := false
 
 	if p.objs[j].SphereIsect {
-		isects = p.objs[i].Hull.intersectsSphere(p.objs[j].Mesh.SphereCenter, p.objs[j].Mesh.SphereRadius)
+		isects, p.objs[j].IDist = p.objs[i].Hull.intersectsSphere(p.objs[j].Mesh.SphereCenter, p.objs[j].Mesh.SphereRadius)
 	} else {
 		isects = p.objs[i].Hull.intersectsMesh(&p.objs[j].Mesh)
 	}
@@ -259,12 +265,12 @@ func (p *Sys) physIsect(i int, j int) {
 		if !p.objs[i].Phys.IsStatic {
 			diff := nv.Mul(vl)
 			p.objs[i].Phys.Pos = p.objs[i].Phys.Pos.Add(diff)
-			p.objs[i].Phys.V = p.objs[i].Phys.V.Add(diff)
+			p.objs[i].Phys.V = p.objs[i].Phys.V.Add(diff).Mul(0.9)
 		}
 		if !p.objs[j].Phys.IsStatic {
 			diff := nv.Mul(-vl)
 			p.objs[j].Phys.Pos = p.objs[j].Phys.Pos.Add(diff)
-			p.objs[j].Phys.V = p.objs[j].Phys.V.Add(diff)
+			p.objs[j].Phys.V = p.objs[j].Phys.V.Add(diff).Mul(0.9)
 		}
 	}
 }

@@ -31,8 +31,6 @@ type World struct {
 	cw int
 	ch int
 
-	cp [][]int
-
 	soulsNum  int
 	moneyNum  int
 	quotaNum  int
@@ -58,7 +56,7 @@ func (w *World) load(r *grm.Renderer) {
 	w.player.obj.Phys.Pos[0] = 21.3
 	w.player.obj.Phys.Pos[1] = 32.0
 	w.player.obj.Phys.Pos[2] = 56.3
-	w.player.obj.Phys.V[1] = 0.01
+	w.player.obj.Phys.V[1] = -0.07
 	w.player.obj.Update()
 
 	w.dimSize = 257
@@ -88,33 +86,68 @@ func (w *World) load(r *grm.Renderer) {
 			cx := 32.0 * float64(i)
 			cz := 32.0 * float64(j)
 
-			nc := grm.GenChunkDim(cx, cz, w.dimsq, w.dimSize)
+			nc := grm.GenChunkDimS(cx, cz)
 
-			xi := int(cx / 32.0)
-			zi := int(cz / 32.0)
-			if len(w.cp) <= xi {
-				w.cp = append(w.cp, []int{int(xi)})
+			avg := 0.0
+			n := 0
+			prevx := w.findChunk(cx+32.0*1, cz)
+			if prevx >= 0 {
+				grm.GetAvgY(&w.chunks[prevx])
+				avg += w.chunks[prevx].AvgY
+				n++
 			}
-			if len(w.cp) > xi {
-				if len(w.cp[xi]) <= zi {
-					w.cp[xi] = append(w.cp[xi], zi)
-				}
+			prevz := w.findChunk(cx, cz+32.0*1)
+			if prevz >= 0 {
+				grm.GetAvgY(&w.chunks[prevz])
+				avg += w.chunks[prevz].AvgY
+				n++
+			}
+			prevx = w.findChunk(cx-32.0*1, cz)
+			if prevx >= 0 {
+				grm.GetAvgY(&w.chunks[prevx])
+				avg += w.chunks[prevx].AvgY
+				n++
+			}
+			prevz = w.findChunk(cx, cz-32.0*1)
+			if prevz >= 0 {
+				grm.GetAvgY(&w.chunks[prevz])
+				avg += w.chunks[prevz].AvgY
+				n++
+			}
+			grm.GetAvgY(&nc)
+
+			avg = avg/float64(n) - nc.AvgY*0.95
+
+			grm.Smooth(&nc)
+			if n > 0 {
+				grm.Raise(&nc, avg)
 			}
 
-			if xi > 0 {
-				grm.Stitch0(&nc, &w.chunks[w.cp[xi-1][zi]])
+			prevx = w.findChunk(cx+32.0*1, cz)
+			if prevx >= 0 {
+				grm.Stitch2(&w.chunks[prevx], &nc)
 			}
-			if zi > 0 {
-				grm.Stitch1(&nc, &w.chunks[w.cp[xi][zi-1]])
+			prevz = w.findChunk(cx, cz+32.0*1)
+			if prevz >= 0 {
+				grm.Stitch3(&w.chunks[prevz], &nc)
+			}
+			prevx = w.findChunk(cx-32.0*1, cz)
+			if prevx >= 0 {
+				grm.Stitch0(&nc, &w.chunks[prevx])
+			}
+			prevz = w.findChunk(cx, cz-32.0*1)
+			if prevz >= 0 {
+				grm.Stitch1(&nc, &w.chunks[prevz])
 			}
 
 			w.addChunk(nc)
-			w.cp[xi][zi] = len(w.chunks) - 1
 		}
 	}
 
 	w.sys.Clear()
 	w.addPhys()
+
+	w.player.obj.Phys.Pos[1] = float32(w.chunks[0].AvgY - 1.0)
 }
 
 func (w *World) genChunkObjs(c *grm.Obj) {
@@ -122,7 +155,7 @@ func (w *World) genChunkObjs(c *grm.Obj) {
 		var e1 Entity
 
 		e1.load()
-		e1.randomChar(c.CX, c.CY-2.0, c.CZ)
+		e1.randomChar(c.CX, c.CY-4.0, c.CZ)
 
 		w.addEntity(e1)
 	}
@@ -232,7 +265,7 @@ func (w *World) chunkGen(cx float64, cz float64) {
 	ind := w.findFree(cx, cz) //cx+32.0*4,
 
 	if ind >= 0 {
-		w.chunks[ind] = grm.GenChunkDim(cx, cz, w.dimsq, w.dimSize)
+		w.chunks[ind] = grm.GenChunkDimS(cx, cz/*, w.dimsq, w.dimSize*/)
 
 		avg := 0.0
 		n := 0
@@ -262,10 +295,12 @@ func (w *World) chunkGen(cx float64, cz float64) {
 		}
 		grm.GetAvgY(&w.chunks[ind])
 
-		avg = avg / float64(n) - w.chunks[ind].AvgY*0.95
+		avg = avg/float64(n) - w.chunks[ind].AvgY*0.95
 
 		grm.Smooth(&w.chunks[ind])
-		grm.Raise(&w.chunks[ind], avg)
+		if n > 0 {
+			grm.Raise(&w.chunks[ind], avg)
+		}
 
 		prevx = w.findChunk(cx+32.0*1, cz)
 		if prevx >= 0 {

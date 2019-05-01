@@ -34,6 +34,7 @@ func (e *Entity) load() {
 	e.rot = &e.obj.Phys.Rot
 	e.hasAnim = false
 	e.obj.Phys.RenderPos = true
+	e.obj.Phys.V[1] = -0.07
 
 	e.obj.SphereIsect = true
 	e.obj.HasHull = false
@@ -113,7 +114,6 @@ func (e *Entity) randomChar(x0 float64, y0 float64, z0 float64) {
 	c.Mesh.Update()
 
 	e.obj.Phys.Pos = mgl32.Vec3{float32(x0), float32(y0), float32(z0)}
-	e.obj.Phys.V[1] = -0.05
 
 	e.evil = false
 	if rand.Float64() > 0.5 {

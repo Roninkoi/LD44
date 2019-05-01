@@ -16,6 +16,7 @@ func GetAvgY(target *Obj) {
 	avgtar /= 1024.0
 
 	target.AvgY = avgtar
+	target.CY = avgtar
 }
 
 func Raise(target *Obj, diff float64) {
@@ -27,10 +28,12 @@ func Raise(target *Obj, diff float64) {
 
 func Smooth(target *Obj) {
 	for i := 0; i < 16*16*4; i += 1 {
-		y0 := target.Mesh.vertexData0[i*4 + 1]
-		y0 = y0 - float32(target.AvgY)
-		if math.Abs(float64(y0)) > 10.0 {
-			target.Mesh.vertexData0[i*4 + 1] = float32(target.AvgY)
+		var y0 float32
+		y0 = 10.0
+		for math.Abs(float64(y0)) > 5.0 {
+			y0 = target.Mesh.vertexData0[i*4 + 1]
+			y0 = y0 - float32(target.AvgY)
+			target.Mesh.vertexData0[i*4 + 1] = float32(target.AvgY)*0.3 + target.Mesh.vertexData0[i*4 + 1]*0.7
 		}
 	}
 }
@@ -90,13 +93,27 @@ func Stitch0(target *Obj, template *Obj) {
 	row := 16 * 4 * 4
 
 	for i := 0; i < 16; i += 1 {
+		y0 := target.Mesh.vertexData0[0*4+1+i*4*4]
+		y1 := template.Mesh.vertexData0[row*15+1*4+1+i*4*4]
+		y0 = y0 * 0.5 + y1 * 0.5
+
 		target.Mesh.vertexData0[0*4+0+i*4*4] = template.Mesh.vertexData0[row*15+1*4+0+i*4*4]
-		target.Mesh.vertexData0[0*4+1+i*4*4] = template.Mesh.vertexData0[row*15+1*4+1+i*4*4]
+
+		target.Mesh.vertexData0[0*4+1+i*4*4] = y1
+		template.Mesh.vertexData0[row*15+1*4+1+i*4*4] = y1
+
 		target.Mesh.vertexData0[0*4+2+i*4*4] = template.Mesh.vertexData0[row*15+1*4+2+i*4*4]
 		target.Mesh.vertexData0[0*4+3+i*4*4] = template.Mesh.vertexData0[row*15+1*4+3+i*4*4]
 
+		y2 := target.Mesh.vertexData0[2*4+5+i*4*4]
+		y3 := template.Mesh.vertexData0[row*15+2*4+1+i*4*4]
+		y2 = y2 * 0.5 + y3 * 0.5
+
 		target.Mesh.vertexData0[2*4+4+i*4*4] = template.Mesh.vertexData0[row*15+2*4+0+i*4*4]
-		target.Mesh.vertexData0[2*4+5+i*4*4] = template.Mesh.vertexData0[row*15+2*4+1+i*4*4]
+
+		target.Mesh.vertexData0[2*4+5+i*4*4] = y3
+		template.Mesh.vertexData0[row*15+2*4+1+i*4*4] = y3
+
 		target.Mesh.vertexData0[2*4+6+i*4*4] = template.Mesh.vertexData0[row*15+2*4+2+i*4*4]
 		target.Mesh.vertexData0[2*4+7+i*4*4] = template.Mesh.vertexData0[row*15+2*4+3+i*4*4]
 	}
@@ -107,13 +124,27 @@ func Stitch1(target *Obj, template *Obj) {
 	row := 16 * 4 * 4
 
 	for i := 0; i < 16; i += 1 {
+		y0 := target.Mesh.vertexData0[1*4+1+0*4*4+i*row]
+		y1 := template.Mesh.vertexData0[2*4+1+15*4*4+i*row]
+		y0 = y0 * 0.5 + y1 * 0.5
+
 		target.Mesh.vertexData0[1*4+0+0*4*4+i*row] = template.Mesh.vertexData0[2*4+0+15*4*4+i*row]
-		target.Mesh.vertexData0[1*4+1+0*4*4+i*row] = template.Mesh.vertexData0[2*4+1+15*4*4+i*row]
+
+		target.Mesh.vertexData0[1*4+1+0*4*4+i*row] = y1
+		template.Mesh.vertexData0[2*4+1+15*4*4+i*row] = y1
+
 		target.Mesh.vertexData0[1*4+2+0*4*4+i*row] = template.Mesh.vertexData0[2*4+2+15*4*4+i*row]
 		target.Mesh.vertexData0[1*4+3+0*4*4+i*row] = template.Mesh.vertexData0[2*4+3+15*4*4+i*row]
 
+		y2 := target.Mesh.vertexData0[0*4+1+0*4*4+i*row]
+		y3 := template.Mesh.vertexData0[3*4+1+15*4*4+i*row]
+		y2 = y2 * 0.5 + y3 * 0.5
+
 		target.Mesh.vertexData0[0*4+0+0*4*4+i*row] = template.Mesh.vertexData0[3*4+0+15*4*4+i*row]
-		target.Mesh.vertexData0[0*4+1+0*4*4+i*row] = template.Mesh.vertexData0[3*4+1+15*4*4+i*row]
+
+		target.Mesh.vertexData0[0*4+1+0*4*4+i*row] = y3
+		template.Mesh.vertexData0[3*4+1+15*4*4+i*row] = y3
+
 		target.Mesh.vertexData0[0*4+2+0*4*4+i*row] = template.Mesh.vertexData0[3*4+2+15*4*4+i*row]
 		target.Mesh.vertexData0[0*4+3+0*4*4+i*row] = template.Mesh.vertexData0[3*4+3+15*4*4+i*row]
 	}
@@ -124,13 +155,27 @@ func Stitch2(target *Obj, template *Obj) {
 	row := 16 * 4 * 4
 
 	for i := 0; i < 16; i += 1 {
+		y0 := template.Mesh.vertexData0[row*15+1*4+1+i*4*4]
+		y1 := target.Mesh.vertexData0[0*4+1+i*4*4]
+		y0 = y0 * 0.5 + y1 * 0.5
+
 		template.Mesh.vertexData0[row*15+1*4+0+i*4*4] = target.Mesh.vertexData0[0*4+0+i*4*4]
-		template.Mesh.vertexData0[row*15+1*4+1+i*4*4] = target.Mesh.vertexData0[0*4+1+i*4*4]
+
+		target.Mesh.vertexData0[0*4+1+i*4*4] = y1
+		template.Mesh.vertexData0[row*15+1*4+1+i*4*4] = y1
+
 		template.Mesh.vertexData0[row*15+1*4+2+i*4*4] = target.Mesh.vertexData0[0*4+2+i*4*4]
 		template.Mesh.vertexData0[row*15+1*4+3+i*4*4] = target.Mesh.vertexData0[0*4+3+i*4*4]
 
+		y2 := template.Mesh.vertexData0[row*15+2*4+1+i*4*4]
+		y3 := target.Mesh.vertexData0[2*4+5+i*4*4]
+		y2 = y2 * 0.5 + y3 * 0.5
+
 		template.Mesh.vertexData0[row*15+2*4+0+i*4*4] = target.Mesh.vertexData0[2*4+4+i*4*4]
-		template.Mesh.vertexData0[row*15+2*4+1+i*4*4] = target.Mesh.vertexData0[2*4+5+i*4*4]
+
+		target.Mesh.vertexData0[2*4+5+i*4*4] = y3
+		template.Mesh.vertexData0[row*15+2*4+1+i*4*4] = y3
+
 		template.Mesh.vertexData0[row*15+2*4+2+i*4*4] = target.Mesh.vertexData0[2*4+6+i*4*4]
 		template.Mesh.vertexData0[row*15+2*4+3+i*4*4] = target.Mesh.vertexData0[2*4+7+i*4*4]
 	}
@@ -141,13 +186,28 @@ func Stitch3(target *Obj, template *Obj) {
 	row := 16 * 4 * 4
 
 	for i := 0; i < 16; i += 1 {
+		y0 := template.Mesh.vertexData0[2*4+1+15*4*4+i*row]
+		y1 := target.Mesh.vertexData0[1*4+1+0*4*4+i*row]
+		y0 = y0 * 0.5 + y1 * 0.5
+
 		template.Mesh.vertexData0[2*4+0+15*4*4+i*row] = target.Mesh.vertexData0[1*4+0+0*4*4+i*row]
-		template.Mesh.vertexData0[2*4+1+15*4*4+i*row] = target.Mesh.vertexData0[1*4+1+0*4*4+i*row]
+
+		//target.Mesh.vertexData0[1*4+1+0*4*4+i*row] = y1
+		template.Mesh.vertexData0[2*4+1+15*4*4+i*row] = y1
+		//template.Mesh.vertexData0[2*4+1+15*4*4+i*row] = target.Mesh.vertexData0[1*4+1+0*4*4+i*row]
+
 		template.Mesh.vertexData0[2*4+2+15*4*4+i*row] = target.Mesh.vertexData0[1*4+2+0*4*4+i*row]
 		template.Mesh.vertexData0[2*4+3+15*4*4+i*row] = target.Mesh.vertexData0[1*4+3+0*4*4+i*row]
 
+		y2 := template.Mesh.vertexData0[row*15+2*4+1+i*4*4]
+		y3 := target.Mesh.vertexData0[0*4+1+0*4*4+i*row]
+		y2 = y2 * 0.5 + y3 * 0.5
+
 		template.Mesh.vertexData0[3*4+0+15*4*4+i*row] = target.Mesh.vertexData0[0*4+0+0*4*4+i*row]
-		template.Mesh.vertexData0[3*4+1+15*4*4+i*row] = target.Mesh.vertexData0[0*4+1+0*4*4+i*row]
+
+		//target.Mesh.vertexData0[0*4+1+0*4*4+i*row] = y3
+		template.Mesh.vertexData0[3*4+1+15*4*4+i*row] = y3
+
 		template.Mesh.vertexData0[3*4+2+15*4*4+i*row] = target.Mesh.vertexData0[0*4+2+0*4*4+i*row]
 		template.Mesh.vertexData0[3*4+3+15*4*4+i*row] = target.Mesh.vertexData0[0*4+3+0*4*4+i*row]
 	}
@@ -162,6 +222,265 @@ func GenChunkDim(x0 float64, z0 float64, dimsq [][]int, dimSize int) Obj {
 	chunkSizeZ := 16
 
 	//maxHeight := 20.0
+
+	doffsi := int((x0) / float64(edgeLength))
+	doffsj := int((z0) / float64(edgeLength))
+
+	if doffsi > dimSize-1 {
+		do := dimSize * int(math.Ceil(float64(doffsi)/float64(dimSize)))
+		doffsi -= do
+	}
+	if doffsj > dimSize-1 {
+		do := dimSize * int(math.Ceil(float64(doffsj)/float64(dimSize)))
+		doffsj -= do
+	}
+	if doffsi < 0 {
+		do := dimSize * int(math.Ceil(float64(-doffsi)/float64(dimSize)))
+		doffsi += do
+	}
+	if doffsj < 0 {
+		do := dimSize * int(math.Ceil(float64(-doffsj)/float64(dimSize)))
+		doffsj += do
+	}
+
+	//x0 := 0.0
+	y0 := float64(dimsq[doffsi][doffsj])
+
+	//z0 := 0.0
+
+	x := x0
+	y := y0
+	z := z0
+
+	centerX := 0.0
+	centerY := 0.0
+	centerZ := 0.0
+
+	t0 := 0.0
+	t1 := 0.0
+
+	t2 := 0.5
+	t3 := 0.5
+
+	yz0 := float64(dimsq[doffsi][doffsj])
+	yza := make([]float64, chunkSizeZ)
+
+	for i := 0; i < chunkSizeZ; i++ {
+		yza[i] = y0
+	}
+	yz0a := make([]float64, chunkSizeZ)
+
+	for i := 0; i < chunkSizeZ; i++ {
+		yz0a[i] = y0
+	}
+
+	yz := yz0
+
+	index := 0
+
+	newChunk.clearMesh()
+
+	newChunk.Model = mgl32.Ident4()
+
+	var di int
+	var dj int
+
+	for i := 0; i < chunkSizeX; i++ {
+		for j := 0; j < chunkSizeZ; j++ {
+			di = i + doffsj
+			dj = j + doffsi
+
+			if di > dimSize-1 {
+				di -= dimSize * int(di/dimSize)
+			}
+			if dj > dimSize-1 {
+				dj -= dimSize * int(dj/dimSize)
+			}
+
+			yz = float64(dimsq[di][dj])
+
+			if i == 0 && j == 0 {
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yz))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yz))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yz))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yz))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+			} else if i == 0 {
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yz0))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yz0))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yz))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yz))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+			} else if j == 0 {
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yza[j]))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yz))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yz))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yza[j]))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+			} else {
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yz0a[j]))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yz0))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yz))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(x))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(y*0.0+yza[j]))
+				newChunk.vertexData0 = append(newChunk.vertexData0, float32(z+edgeLength))
+				newChunk.vertexData0 = append(newChunk.vertexData0, 1.0)
+			}
+
+			if i == chunkSizeX/2-1 && j == chunkSizeZ/2-1 {
+				centerX = x
+				centerY = yz
+				centerZ = z
+			}
+
+			var tr float64
+			if rand.Float64() > 0.5 {
+				tr = rand.Float64()
+			}
+			t0, t1, t2, t3 = randomTex((float64(int(yz)%40)/40.0 + tr) / 2.0 + 0.2)
+
+			newChunk.texData = append(newChunk.texData, float32(t0))
+			newChunk.texData = append(newChunk.texData, float32(t1))
+			newChunk.texData = append(newChunk.texData, float32(1.0))
+			newChunk.texData = append(newChunk.texData, float32(1.0))
+
+			newChunk.texData = append(newChunk.texData, float32(t0+t2))
+			newChunk.texData = append(newChunk.texData, float32(t1))
+			newChunk.texData = append(newChunk.texData, float32(1.0))
+			newChunk.texData = append(newChunk.texData, float32(1.0))
+
+			newChunk.texData = append(newChunk.texData, float32(t0+t2))
+			newChunk.texData = append(newChunk.texData, float32(t1+t3))
+			newChunk.texData = append(newChunk.texData, float32(1.0))
+			newChunk.texData = append(newChunk.texData, float32(1.0))
+
+			newChunk.texData = append(newChunk.texData, float32(t0))
+			newChunk.texData = append(newChunk.texData, float32(t1+t3))
+			newChunk.texData = append(newChunk.texData, float32(1.0))
+			newChunk.texData = append(newChunk.texData, float32(1.0))
+
+			newChunk.indexData = append(newChunk.indexData, uint16(index+2))
+			newChunk.indexData = append(newChunk.indexData, uint16(index+1))
+			newChunk.indexData = append(newChunk.indexData, uint16(index+0))
+
+			newChunk.indexData = append(newChunk.indexData, uint16(index+3))
+			newChunk.indexData = append(newChunk.indexData, uint16(index+2))
+			newChunk.indexData = append(newChunk.indexData, uint16(index+0))
+
+			index += 4
+			z += edgeLength
+
+			yz0a[j] = yz0
+			yza[j] = yz
+			yz0 = yz
+		}
+		x += edgeLength
+		z = z0
+		yz0 = float64(dimsq[di][doffsj])
+		yz = float64(dimsq[di][doffsj])
+	}
+
+	newChunk.vertexData = append(newChunk.vertexData, newChunk.vertexData0...)
+
+	newChunk.faceNormals = append(newChunk.faceNormals, filledArray((int)((float64)(len(newChunk.indexData))/3.0)*3, 0.0)...)
+	newChunk.faceCenter = append(newChunk.faceCenter, filledArray((int)((float64)(len(newChunk.indexData))/3.0)*3, 0.0)...)
+
+	newChunk.vertexNormals = append(newChunk.vertexNormals, filledArray(len(newChunk.vertexData), 0.0)...)
+
+	newChunk.Update()
+
+	newChunk.getTriSize()
+
+	var nc Obj
+	//nc.LoadHullMesh(nil, newChunk, true, true, "")
+	nc.Mesh = newChunk
+
+	nc.X0 = x0
+	nc.Y0 = y0
+	nc.Z0 = z0
+
+	nc.CX = centerX
+	nc.CY = centerY
+	nc.CZ = centerZ
+
+	return nc
+}
+
+func GenChunkDimS(x0 float64, z0 float64) Obj {
+	var newChunk Mesh
+
+	edgeLength := 2.0
+
+	chunkSizeX := 16
+	chunkSizeZ := 16
+
+	maxHeight := 20.0
+
+	dimSize := 16
+
+	dimsq := make([][]int, dimSize)
+	for z := 0; z < dimSize; z++ {
+		dimsq[z] = make([]int, dimSize)
+		for x := 0; x < dimSize; x++ {
+			dimsq[z][x] = int(rand.Float64() * maxHeight)
+		}
+	}
+
+	DiamondSquare(dimsq, dimSize)
 
 	doffsi := int((x0) / float64(edgeLength))
 	doffsj := int((z0) / float64(edgeLength))

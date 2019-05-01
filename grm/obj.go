@@ -10,6 +10,7 @@ type Obj struct {
 
 	Isects      bool
 	IsectNormal mgl32.Vec3
+	IDist float64
 
 	HasHull  bool
 	sameHull bool // hull is Mesh
