@@ -62,8 +62,6 @@ func timeNow() float64 {
 // main engine program
 func (g *Gorium) main() {
 	for g.Running {
-		g.fpsTicks++
-
 		g.time = timeNow()
 
 		if g.time-g.fpsTime >= 1000.0 {
@@ -96,6 +94,7 @@ func (g *Gorium) main() {
 }
 
 func (g *Gorium) render() {
+	g.fpsTicks++
 	g.rt = timeNow()
 
 	g.Renderer.ticks = g.Ticks
