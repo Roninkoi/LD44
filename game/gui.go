@@ -210,7 +210,8 @@ func (g *GUI) draw(r *grm.Renderer) {
 
 	g.soulBar.AnimDraw(r)
 
-	g.renderText(r, strconv.Itoa(int(g.soulPer*100.0))+"%", 0.75, 0.85, 0.05)
+	g.renderText(r, strconv.Itoa(int(math.Floor(g.soulPer*100.0)))+"%", 0.75, 0.85, 0.05)
+	println(g.soulPer)
 
 	g.money.AnimDraw(r)
 	g.renderText(r, strconv.Itoa(g.moneyNum), -0.74, -0.42, 0.05)

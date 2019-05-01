@@ -447,9 +447,9 @@ func (w *World) tick() {
 				newx := w.entities[ranent].obj.X0
 				newy := w.entities[ranent].obj.Y0
 				newz := w.entities[ranent].obj.Z0
-				w.entities[ranent].obj.X0 = w.entities[i].obj.X0 // mix up coords
-				w.entities[ranent].obj.Y0 = w.entities[i].obj.Y0
-				w.entities[ranent].obj.Z0 = w.entities[i].obj.Z0
+				w.entities[ranent].obj.X0 += rand.Float64() * 64.0/*w.entities[i].obj.X0*/ // mix up coords
+				w.entities[ranent].obj.Y0 += rand.Float64() * 64.0/*w.entities[i].obj.Y0*/
+				w.entities[ranent].obj.Z0 += rand.Float64() * 64.0/*w.entities[i].obj.Z0*/
 				w.entities[i].randomChar(newx, newy, newz)
 
 				println("DEAD", i)

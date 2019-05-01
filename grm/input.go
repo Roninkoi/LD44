@@ -25,12 +25,12 @@ type Input struct {
 }
 
 func (i *Input) getKeys(win *glfw.Window) {
-	if win.GetKey(glfw.KeyW) == glfw.Press {
+	if win.GetKey(glfw.KeyW) == glfw.Press || win.GetKey(glfw.KeyZ) == glfw.Press {
 		i.W = true
 	} else {
 		i.W = false
 	}
-	if win.GetKey(glfw.KeyA) == glfw.Press {
+	if win.GetKey(glfw.KeyA) == glfw.Press || win.GetKey(glfw.KeyQ) == glfw.Press {
 		i.A = true
 	} else {
 		i.A = false

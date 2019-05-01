@@ -85,19 +85,20 @@ func (g *Game) run() { // GAME LOGIC
 
 		g.world.moneyNum -= g.world.billNum
 		g.world.moneyNum += g.world.salaryNum
-		g.world.shiftNum = int(((rand.Float64() + 1.0) / 2.0) * 24.0)
-
-		g.world.salaryNum += int(math.Round(rand.Float64()))
-		g.world.quotaNum += int((math.Round(rand.Float64() - 0.4)) * 3.0) // ???
-
-		g.world.billNum += 1
-		g.world.day += 1
 
 		if g.world.soulsNum >= g.world.quotaNum && g.world.moneyNum > 0 {
 			g.win = true
 		} else {
 			g.lose = true
 		}
+
+		g.world.shiftNum = int(((rand.Float64() + 1.0) / 2.0) * 24.0)
+
+		g.world.salaryNum += int(math.Round(rand.Float64()))
+		g.world.quotaNum += int(math.Round(rand.Float64()*3.0 - 0.5)) // ???
+
+		g.world.billNum += 1
+		g.world.day += 1
 	}
 }
 
